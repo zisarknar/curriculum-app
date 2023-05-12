@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Log') {
           steps {
-            sh 'ls -la'
+            sh 'ls -la && pwd'
           }
         }
 
